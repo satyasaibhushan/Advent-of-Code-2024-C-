@@ -4,6 +4,8 @@
 #include <utility>
 #include <map>
 #include <sstream>
+#include <chrono>
+
 using namespace std;
 
 int solve(vector<char> A)
@@ -15,6 +17,7 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
+    auto start = chrono::high_resolution_clock::now();
 
     vector<pair<int, int>> pairs;
     ifstream file("./question");
@@ -45,7 +48,9 @@ int main()
     }
     cout << ans << endl;
 
-    // cout << "Read " << A.size() << " numbers\n";
+    cout << "Run time - "
+         << chrono::duration_cast<chrono::microseconds>(chrono::high_resolution_clock::now() - start).count() / 1e3
+         << " ms." << endl;
 
     return 0;
 }
