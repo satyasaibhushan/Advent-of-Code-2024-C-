@@ -9,6 +9,7 @@
 		"__split_buffer": "cpp",
 		"deque": "cpp",
 		"ios": "cpp",
-		"algorithm": "cpp"
+		"algorithm": "cpp",
+		"filesystem": "cpp"
 	}
 }
