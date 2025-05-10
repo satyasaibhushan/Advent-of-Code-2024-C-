@@ -11,6 +11,10 @@
 		"ios": "cpp",
 		"algorithm": "cpp",
 		"filesystem": "cpp",
-		"__config": "cpp"
+		"__config": "cpp",
+		"__hash_table": "cpp",
+		"__tree": "cpp",
+		"locale": "cpp",
+		"map": "cpp"
 	}
 }
